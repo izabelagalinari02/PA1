@@ -110,7 +110,7 @@ class Main inherits IO {
                else if (top = "s") then
                   stack <- new StackCommandS.operation(stack) (* Faz a troca *)
                else
-                  stack -- do nothing 
+                  stack 
                fi fi;
             };
          }
