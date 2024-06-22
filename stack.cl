@@ -87,7 +87,7 @@ class Main inherits IO {
 
    main() : Object {
       let cmd: String <- "" in
-      while (not cmd = "x") loop { // Loop principal até o usuário digitar "x"
+      while (not cmd = "x") loop { (* Loop principal até o usuário digitar "x" *)
          out_string(">");
          cmd <- in_string();
          if (cmd = "d") then { // Se o comando for "d", imprime a pilha
