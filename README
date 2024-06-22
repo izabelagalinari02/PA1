@@ -1,14 +1,14 @@
 
-README file for Programming Assignment 1
+README file
 ========================================
 
 Your directory should now contain the following files:
 
- Makefile
- README
- atoi.cl 
- stack.cl
- stack.test 
+	 Makefile
+	 README
+	 atoi.cl 
+	 stack.cl
+	 stack.test 
 
 	The Makefile contains targets for compiling and running your
 	program, as well as handing it in.
@@ -56,33 +56,26 @@ Instructions
 
 ---8<------8<------8<------8<---cut here---8<------8<------8<------8<---
 
-Questions on PA1
+Questions
 ----------------
 
 1. Describe your implementation of the stack machine in a single short
    paragraph.
 
-   Minha implementação da máquina de pilha consiste na criação da classe 
-   `StackCommand` e suas subclasses que contém cada uma das operações necessárias
-   para a realização do exercício.
+   Minha máquina de pilha envolve a criação da classe 
+   `StackCommand` e suas subclasses, cada uma tem as operações necessárias
+   para execução do exercício.
 
 
 2. List 3 things that you like about the Cool programming language.
 
-	- Gosto do fato de a linguagem é Orietada a Objetos, permitindo fazer 
-	operações complexas, como herança por exemplo.
-	- Também me agrada muito a linguagem ser fortemente tipada com tipagem estática,
-	o que deixa o programa mais organizado e menos propenso a falhas, na minha opinião.
-	- Gosto muito da forma com que a linguagem Cool implementa a definição de escopo, por
-	meio de `{}`, ao invés de ser por identação, como o python.
+	- Que ela é fortemente tipada, ajudando para não ter muitos erro de compilação.
+	- Também que é orientada a objetos, herança e polimorfismo.
+	- E também gosto por ser uma linguagem fácil de aprender e com uma didática simples.
 
 3. List 3 things you DON'T like about Cool.
 	
-	- Não gosto do uso de `<-` para atribuição no lugar do `=`.
-	- Achei que falta plugins ou uma IDE especializada para o uso da linguagem Cool. Fiz com
-	o Sublime, e acaba que a IDE é apenas uma ferramenta de texto qualquer, como o bloco de notas.
-	Além disso, achei que a depuração de erros bem limitada, o console apenas indica onde está o 
-	erro durante a exucução, mas não exatamente qual o erro, o que dificulta a correção de bugs.
-	- A linguagem é extretamamete simples e muitas vezes verbosa de mais. Me incomoda a falta de 
-	um `for`, por exemplo, além do fato de ter que usar keywords como `loop` e `pool` ao usar
-	o `while`.
+	- A eficiência e a performance do código podem ser inferiores às linguagens de programação otimizadas.
+	- Achei a depuração de erros bem limitada, o console apenas indica onde está o 
+	erro durante a exucução, dificultando muito para achar o erro.
+	- Usar -> ao inves de =, me confundiu um pouco..
