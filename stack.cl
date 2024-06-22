@@ -64,11 +64,12 @@ class StackCommandS inherits StackCommand {
 };
 
 class StackCommandD inherits StackCommand {
+   // Imprime todos elementos 
    print_stack(stack: StackCommand): StackCommand {
       if (not stack.isNil()) then {
-         out_string(stack.top());
+         out_string(stack.top()); // Imprime o que esta no topo
          out_string("\n");
-         print_stack(stack.pop());
+         print_stack(stack.pop()); // Chama recursivamente o próximo
       } else {
          out_string("");
       }
@@ -86,25 +87,25 @@ class Main inherits IO {
 
    main() : Object {
       let cmd: String <- "" in
-      while (not cmd = "x") loop {
+      while (not cmd = "x") loop { // Loop principal até o usuário digitar "x"
          out_string(">");
          cmd <- in_string();
-         if (cmd = "d") then {
+         if (cmd = "d") then { // Se o comando for "d", imprime a pilha
             new StackCommandD.operation(stack);
          }
-         else if (cmd = "e") then {
+         else if (cmd = "e") then { // Se o comando for "e", executa a operação correspondente ao topo da pilha
             let top: String <- stack.top() in {
                if (top = "+") then 
-                  stack <- new StackCommandPlus.operation(stack)
+                  stack <- new StackCommandPlus.operation(stack) // Faz a soma
                else if (top = "s") then
-                  stack <- new StackCommandS.operation(stack)
+                  stack <- new StackCommandS.operation(stack) // Faz a troca
                else
-                  stack -- do nothing
+                  stack -- do nothing 
                fi fi;
             };
          }
          else 
-            stack <- stack.push(cmd)
+            stack <- stack.push(cmd) // Empilha o comando
          fi fi;
       } pool
    };
